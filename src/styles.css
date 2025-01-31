@@ -113,7 +113,7 @@ nav {
 
 #menu-section {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350PX, 1fr));
+    grid-template-columns: 1fr 1fr;
     gap: 3rem;
     margin-top: 3rem;
 }
@@ -163,7 +163,6 @@ nav {
 
 
 
-
 /* ---------------------------------------------------------- */
 
 
@@ -173,6 +172,18 @@ nav {
 
     #introduction__content {
         flex-direction: column;
+    }
+
+    #menu-section {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 360px) {
+
+    #content {
+        width: 100%;
     }
 
 }
