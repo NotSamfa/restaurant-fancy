@@ -1,0 +1,179 @@
+:root {
+    --clr-white: #F5F5F5;
+    --clr-black: #0A0A0A;
+    --clr-blue: #66aec6;
+    --clr-gray: #808080;
+    --clr-dark-gray: #0d0d0d;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: var(--clr-white);
+    background-image: url("./dim-sky.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--clr-black);
+    font-family: "Raleway", serif;
+}
+
+p {
+    line-height: 1.6;
+    letter-spacing: 0.05rem;
+}
+
+
+/* ---------------------------------------------------------- */
+
+
+nav {
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    padding: 1.2rem;
+    width: 100%;
+    background-color: var(--clr-black);
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        100% calc(100% - 40px),
+        calc(100% - 40px) 100%,
+        40px 100%,
+        0 calc(100% - 40px)
+      );
+}
+
+.nav-btn {
+    padding: 1rem 2rem;
+    border: 1px solid var(--clr-black);
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.125rem;
+    color: var(--clr-white);
+    background-color: var(--clr-white);
+    background-color: inherit;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.nav-btn:hover {
+    color: var(--clr-gray);
+    border: 1px solid var(--clr-gray);
+}
+
+
+/* ---------------------------------------------------------- */
+
+
+#welcome__title {
+    font-size: clamp(2rem, 5vw, 4rem);
+    font-weight: 200;
+    letter-spacing: 0.5rem;
+    text-align: center;
+    opacity: 20%;
+}
+
+#welcome__description {
+    opacity: 40%;
+}
+
+#welcome__description span {
+    font-weight: 800;
+}
+
+#content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 8rem min(8rem, 10%);
+    min-height: 100vh;
+    width: 90%;
+    color: var(--clr-white);
+    background-color: var(--clr-black);
+    box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.5);;
+}
+
+
+/* ---------------------------------------------------------- */
+
+
+#menu > h1{
+    text-align: center;
+
+}
+
+#menu-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350PX, 1fr));
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.menu-section__item {
+    z-index: 0.1;
+    padding: 1.5rem;
+    background-color: var(--clr-dark-gray);
+    border-radius: 10px;
+    border-bottom: 0.5px solid var(--clr-blue);
+    transition: transform 0.3s ease;
+    user-select: none;
+}
+
+.menu-section__item:hover {
+    transform: translateY(-5px);
+}
+
+.menu-section__item > p:nth-child(3) {
+    font-weight: 600;
+}
+
+
+/* ---------------------------------------------------------- */
+
+
+#introduction > h1 {
+    font-size: clamp(2rem, 3vw, 3rem);
+    text-align: center;
+}
+
+#introduction__content {
+    display: flex;
+    gap: 2rem;
+    margin-top: 4rem;
+    align-items: center;
+}
+
+#restaurant-pic {
+    width: 100%;
+}
+
+#introduction__content > p {
+    max-width: 50ch;
+    text-align: justify;
+}
+
+
+
+
+/* ---------------------------------------------------------- */
+
+
+
+
+@Media (max-width: 1350px){
+
+    #introduction__content {
+        flex-direction: column;
+    }
+
+}
+
