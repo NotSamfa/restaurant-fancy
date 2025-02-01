@@ -1,8 +1,12 @@
 # [Practice] Restaurant Fantasy
 
+
+![Screenshot of the project](https://github.com/user-attachments/assets/e5638ed3-c7c9-4fb0-801d-00578ec58a29)
+
+
 ## Webpack practice
 
-This simple project was meant as practice for some of the basics of using Webpack. For this reason, the project was focused on creating modules which inject all the HTML content using JavaScript modules structures for the two sections available. Other simple concepts such as IIFE (Immediately Invoked Function Expressions) and a simple adaptation for responsiveness were also implemented. Although, it was not designed as mobile-first.
+This simple project was meant as practice for some of the basics of using Webpack. For this reason, the project was focused on creating modules which inject all the HTML content using JavaScript modules structures (ESM) for the two sections available. Other simple concepts such as IIFE (Immediately Invoked Function Expressions) and a simple adaptation for responsiveness were also implemented. Although, it was not designed as mobile-first.
 
 ## Installation
 
