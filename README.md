@@ -50,3 +50,7 @@ npx webpack serve
 ### html-webpack-plugin 
 
 - Automatically injects the generated JavaScript and CSS files (imported for its side effect in _index.js_) into the HTML.
+
+### webpack-merge
+
+- It's recommended to separate the logic between different environments, such as development and production, as we'll need different configurations for each one, like changing the source mapping. But as the webpack documentation says, "we'll still maintain a 'common' configuration to keep things DRY".
